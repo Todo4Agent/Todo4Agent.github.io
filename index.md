@@ -17,6 +17,8 @@ hero:
 
 ## 软件截图
 
+![软件截图](/asset/main.png)
+
 ## 许可证
 
 软件使用 GNU AGPL v3.0 协议。
