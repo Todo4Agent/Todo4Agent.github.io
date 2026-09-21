@@ -2,9 +2,7 @@
 
 ## 安装
 
-从 [GitHub Releases](https://github.com/Todo4Agent/Todo4Agent/releases) 下载对应平台的安装包即可。服务端口与对外监听可在「设置 → 服务」中修改（默认 3000 端口 / 监听 0.0.0.0）。
-
-<DownloadLinks />
+从 [GitHub Releases](https://github.com/Todo4Agent/Todo4Agent/releases) 下载对应平台的安装包即可。
 
 ## 启动
 
@@ -34,9 +32,3 @@
 - **导入 / 导出 JSON**：含任务清单与提示词，方便备份与迁移
 - **跨平台**：桌面应用（Windows / macOS / Linux）与浏览器 WebUI
 - **提示词**：AGENTS.md 式的 Agent 协作规范，默认为空、由用户自行填写，界面可编辑 / 复制 / 清空，Agent 也可通过 MCP 读写（数据按用户隔离）
-
-## 下一步
-
-- 要让 Agent 操作任务清单，见 [Agent 接入（MCP）](/mcp)
-- 了解命令行运行模式与参数，见[命令行](/shell)
-- 了解数据存储位置与备份迁移，见[数据](/data)
