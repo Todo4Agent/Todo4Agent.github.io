@@ -4,7 +4,7 @@ Todo4Agent 以 MCP（Model Context Protocol）Server 的形式向 Agent 开放�
 
 ## 客户端配置
 
-在支持 MCP 的 Agent 客户端（ZCode / Claude Desktop 通用格式）中配置：
+在支持 MCP 的 Agent 客户端中配置：
 
 ```json
 {
@@ -31,17 +31,17 @@ MCP 启动时必须通过 `TODO4AGENT_USERNAME` / `TODO4AGENT_PASSWORD` 指定�
 
 ## 可用工具
 
-| 工具 | 说明 |
-| --- | --- |
-| `app_version` / `app_release` | 查询应用版本号 / 发布页地址 |
-| `group_list` / `group_create` / `group_rename` / `group_delete` | 任务分组管理（删除分组其下任务一并进回收站） |
-| `task_list` / `task_create` / `task_update` | 任务查询与编辑（支持按分组过滤、移动分组、改状态、截止时间） |
-| `task_complete` / `task_delete` | 完成切换 / 删除（软删除进回收站） |
-| `task_archive` / `task_unarchive` | 归档 / 取消归档任务 |
-| `db_path` | 查询当前连接的数据库文件路径（含 `TODO4AGENT_DB` 覆盖后的实际路径） |
-| `task_export` / `task_import` | 导出任务清单与提示词 JSON（与界面导出同构）/ 导入（同名分组并入，提示词随 `prompt` 字段迁移） |
-| `user_password` | 修改当前账号密码（原密码 + 新密码；改后该用户已登录会话失效） |
-| `prompt_get` / `prompt_update` | 读取 / 全量更新当前用户的 Agent 提示词（默认为空；传空字符串即清空） |
+| 工具                                                            | 说明                                                                                          |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| `app_version` / `app_release`                                   | 查询应用版本号 / 发布页地址                                                                   |
+| `group_list` / `group_create` / `group_rename` / `group_delete` | 任务分组管理（删除分组其下任务一并进回收站）                                                  |
+| `task_list` / `task_create` / `task_update`                     | 任务查询与编辑（支持按分组过滤、移动分组、改状态、截止时间）                                  |
+| `task_complete` / `task_delete`                                 | 完成切换 / 删除（软删除进回收站）                                                             |
+| `task_archive` / `task_unarchive`                               | 归档 / 取消归档任务                                                                           |
+| `db_path`                                                       | 查询当前连接的数据库文件路径（含 `TODO4AGENT_DB` 覆盖后的实际路径）                           |
+| `task_export` / `task_import`                                   | 导出任务清单与提示词 JSON（与界面导出同构）/ 导入（同名分组并入，提示词随 `prompt` 字段迁移） |
+| `user_password`                                                 | 修改当前账号密码（原密码 + 新密码；改后该用户已登录会话失效）                                 |
+| `prompt_get` / `prompt_update`                                  | 读取 / 全量更新当前用户的 Agent 提示词（默认为空；传空字符串即清空）                          |
 
 ## 清单锁定
 
