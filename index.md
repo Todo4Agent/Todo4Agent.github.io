@@ -10,9 +10,7 @@ hero:
 
 ## 如何下载
 
-<DownloadLinks :links="[
-    { label: 'GitHub Releases', href: 'https://github.com/Todo4Agent/Todo4Agent/releases', description: 'Windows / macOS / Linux 安装包' }
-]" />
+<DownloadLinks />
 
 下载后在「设置 → 服务」中可修改 WebUI 端口与对外监听（默认 3000 端口、监听 0.0.0.0，局域网设备可直接访问）。
 

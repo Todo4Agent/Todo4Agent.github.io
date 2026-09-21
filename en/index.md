@@ -10,9 +10,7 @@ hero:
 
 ## How to Download
 
-<DownloadLinks :links="[
-    { label: 'GitHub Releases', href: 'https://github.com/Todo4Agent/Todo4Agent/releases', description: 'Windows / macOS / Linux installers' }
-]" />
+<DownloadLinks />
 
 After installing, you can change the WebUI port and external listening in "Settings → Service" (defaults: port 3000, listening on 0.0.0.0 so other devices on your LAN can access it directly).
 
