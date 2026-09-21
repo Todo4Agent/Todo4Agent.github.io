@@ -34,13 +34,8 @@ export const en = defineConfig({
             },
             {
                 text: 'Docs',
-                activeMatch: '/en/(quickstart|mcp|shell|data)',
-                items: [
-                    { text: 'Quick Start', link: '/en/quickstart' },
-                    { text: 'Agent Access (MCP)', link: '/en/mcp' },
-                    { text: 'Command Line', link: '/en/shell' },
-                    { text: 'Data', link: '/en/data' }
-                ]
+                link: '/en/quickstart',
+                activeMatch: '/en/(quickstart|mcp|shell|data)'
             },
             {
                 text: 'Changelog',

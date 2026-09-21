@@ -4,7 +4,7 @@ Todo4Agent exposes the task list to agents as an MCP (Model Context Protocol) se
 
 ## Client Configuration
 
-Configure it in any MCP-capable agent client (the same format works for ZCode / Claude Desktop):
+Configure it in any MCP-capable agent client:
 
 ```json
 {
@@ -31,17 +31,17 @@ After a password change (in the UI or via the MCP `user_password` tool), all sig
 
 ## Available Tools
 
-| Tool | Description |
-| --- | --- |
-| `app_version` / `app_release` | Query the app version / releases page URL |
-| `group_list` / `group_create` / `group_rename` / `group_delete` | Task group management (deleting a group moves its tasks to the trash) |
-| `task_list` / `task_create` / `task_update` | Task queries and edits (filter by group, move between groups, change status, due dates) |
-| `task_complete` / `task_delete` | Toggle completion / delete (soft delete into the trash) |
-| `task_archive` / `task_unarchive` | Archive / unarchive tasks |
-| `db_path` | Query the connected database file path (including any `TODO4AGENT_DB` override) |
-| `task_export` / `task_import` | Export tasks and prompts as JSON (same shape as the UI export) / import (same-name groups merge; prompts migrate via the `prompt` field) |
-| `user_password` | Change the current account's password (old + new; revokes that user's signed-in sessions) |
-| `prompt_get` / `prompt_update` | Read / fully replace the current user's agent prompt (empty by default; an empty string clears it) |
+| Tool                                                            | Description                                                                                                                              |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `app_version` / `app_release`                                   | Query the app version / releases page URL                                                                                                |
+| `group_list` / `group_create` / `group_rename` / `group_delete` | Task group management (deleting a group moves its tasks to the trash)                                                                    |
+| `task_list` / `task_create` / `task_update`                     | Task queries and edits (filter by group, move between groups, change status, due dates)                                                  |
+| `task_complete` / `task_delete`                                 | Toggle completion / delete (soft delete into the trash)                                                                                  |
+| `task_archive` / `task_unarchive`                               | Archive / unarchive tasks                                                                                                                |
+| `db_path`                                                       | Query the connected database file path (including any `TODO4AGENT_DB` override)                                                          |
+| `task_export` / `task_import`                                   | Export tasks and prompts as JSON (same shape as the UI export) / import (same-name groups merge; prompts migrate via the `prompt` field) |
+| `user_password`                                                 | Change the current account password (old + new; revokes that user's signed-in sessions)                                                  |
+| `prompt_get` / `prompt_update`                                  | Read / fully replace the current user's agent prompt (empty by default; an empty string clears it)                                       |
 
 ## List Locking
 

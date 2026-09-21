@@ -2,9 +2,7 @@
 
 ## Installation
 
-Download the installer for your platform from [GitHub Releases](https://github.com/Todo4Agent/Todo4Agent/releases) (Windows / macOS / Linux). The service port and external listening can be changed in "Settings → Service" (defaults: port 3000 / listening on 0.0.0.0).
-
-<DownloadLinks />
+Download the installer for your platform from [GitHub Releases](https://github.com/Todo4Agent/Todo4Agent/releases).
 
 ## Launch
 
@@ -34,9 +32,3 @@ Please change the password as soon as possible after signing in ("Settings → U
 - **JSON import / export**: task lists and prompts included, for backup and migration
 - **Cross-platform**: desktop apps (Windows / macOS / Linux) and browser WebUI
 - **Prompts**: an AGENTS.md-style collaboration spec for your agent — empty by default, edited in the UI, and readable / writable by the agent through MCP (isolated per user)
-
-## Next Steps
-
-- To let an agent operate your task list, see [Agent Access (MCP)](/en/mcp)
-- For run modes and options, see [Command Line](/en/shell)
-- For storage location and backup / migration, see [Data](/en/data)
