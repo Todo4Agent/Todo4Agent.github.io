@@ -34,13 +34,8 @@ export const zh = defineConfig({
             },
             {
                 text: '文档',
-                activeMatch: '/(quickstart|mcp|shell|data)',
-                items: [
-                    { text: '快速开始', link: '/quickstart' },
-                    { text: 'Agent 接入（MCP）', link: '/mcp' },
-                    { text: '命令行', link: '/shell' },
-                    { text: '数据', link: '/data' }
-                ]
+                link: '/quickstart',
+                activeMatch: '/(quickstart|mcp|shell|data)'
             },
             {
                 text: '更新日志',
@@ -52,8 +47,7 @@ export const zh = defineConfig({
             { text: '快速开始', link: '/quickstart' },
             { text: 'Agent 接入（MCP）', link: '/mcp' },
             { text: '命令行', link: '/shell' },
-            { text: '数据', link: '/data' },
-            { text: '更新日志', link: '/changelog' }
+            { text: '数据', link: '/data' }
         ],
         notFound: {
             title: '页面未找到',
