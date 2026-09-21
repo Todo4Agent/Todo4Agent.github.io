@@ -33,10 +33,27 @@ export const en = defineConfig({
                 link: '/en/'
             },
             {
+                text: 'Docs',
+                activeMatch: '/en/(quickstart|mcp|shell|data)',
+                items: [
+                    { text: 'Quick Start', link: '/en/quickstart' },
+                    { text: 'Agent Access (MCP)', link: '/en/mcp' },
+                    { text: 'Command Line', link: '/en/shell' },
+                    { text: 'Data', link: '/en/data' }
+                ]
+            },
+            {
                 text: 'Changelog',
                 link: '/en/changelog',
                 activeMatch: '/en/changelog'
             }
+        ],
+        sidebar: [
+            { text: 'Quick Start', link: '/en/quickstart' },
+            { text: 'Agent Access (MCP)', link: '/en/mcp' },
+            { text: 'Command Line', link: '/en/shell' },
+            { text: 'Data', link: '/en/data' },
+            { text: 'Changelog', link: '/en/changelog' }
         ],
         notFound: {
             title: 'Page not found',
