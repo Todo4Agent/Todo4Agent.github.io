@@ -6,7 +6,7 @@ export const shared = defineConfig({
     title: 'Todo4Agent',
     //网页地图
     sitemap: {
-        hostname: 'https://todo4agent.github.io/'
+        hostname: 'https://todo4agent.blazesnow.com/'
     },
     //头文件配置
     head: [
